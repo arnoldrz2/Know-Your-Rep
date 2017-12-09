@@ -20,15 +20,15 @@ Sketch of Final Product
 
 APIs to be Used
   - Google Maps API
-	  ** Used to show the map location of the users district
+    ** Used to show the map location of the users district
 	- ProPublica Congress API
-	  ** Used to retrieve legislative data (votes, bills, nominations, etc.)
+    ** Used to retrieve legislative data (votes, bills, nominations, etc.)
 	- Google Civic Information API
-	  ** Used to get data on representatives/senators
+    ** Used to get data on representatives/senators
 
 Rough Breakdown of Tasks
-	- Research APIs
-	  ** Determine what data is pulled from which API
-	- Develop layout of site
-          ** HTML/CSS components
+  - Research APIs
+    ** Determine what data is pulled from which API
+  - Develop layout of site
+    ** HTML/CSS components
 	- Create JavaScript to pull data onto webpage
