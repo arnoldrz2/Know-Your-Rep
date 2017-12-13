@@ -16,21 +16,21 @@ Project Description
 Sketch of Final Product
   - User enters in address or zip code
   - Site returns the users representatives in Congress and current bills supported by the user's rep
-      ** Maybe state reps too, if we can find an API???
+      * Maybe state reps too, if we can find an API???
 
 APIs to be Used
   - Google Maps API
-      ** Used to show the map location of the users district
+      * Used to show the map location of the users district
   - ProPublica Congress API
-      ** Used to retrieve legislative data (votes, bills, nominations, etc.)
-          Congress API: "ithnTgyj4uqxSBHwwIcdHsbe8n5sJQeQSKGthHuW"
-          API Info:     "https://projects.propublica.org/api-docs/congress-api/"
+      * Used to retrieve legislative data (votes, bills, nominations, etc.)
+        * Congress API: "ithnTgyj4uqxSBHwwIcdHsbe8n5sJQeQSKGthHuW"
+        * API Info: https://projects.propublica.org/api-docs/congress-api/
   - Google Civic Information API
-      ** Used to get data on representatives/senators
+      * Used to get data on representatives/senators
 
 Rough Breakdown of Tasks
   - Research APIs
-      ** Determine what data is pulled from which API
+      * Determine what data is pulled from which API
   - Develop layout of site
-      ** HTML/CSS components
+      * HTML/CSS components
   - Create JavaScript to pull data onto webpage
