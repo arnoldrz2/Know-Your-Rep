@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Know your rep</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="assets/javascript/logic.js"></script>
+
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div class="container"><h1 id="header">Know your Rep</h1></div>
+		</div>
+		
+	<div class="container">
+
+    <div class="row">
+      <div class="col-sm-6">
+         <div class="panel panel-info">
+			   		<div class="panel-heading">
+				    	<h3 class="panel-title">Instuctions</h3>
+				  	</div>
+			  	<div class="panel-body">
+			   	 <p>
+						 To find your house representative and state senetor, 
+						 enter your address into the search box on the right and 
+						 click the search button.
+					 </p>
+					 <p>
+						 Information on your house representative and state senator will 
+						 appear in the boxes below.
+					 </p>
+			  	</div>
+				 </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="panel panel-info">
+		  		<div class="panel-heading">
+			    	<h3 class="panel-title">Address Input</h3>
+			  	</div>
+			  	<div class="panel-body">
+						<form>
+					    <div class="form-group">
+					      <label for="employee-name-input">Address</label>
+					      <input class="form-control" id="Address" type="text" placeholder="Enter Address">
+					    </div>
+					    <div class="form-group">
+					     <label for="role-input">City</label>
+					     <input class="form-control" id="City" type="text" placeholder="Enter City">
+					    </div>
+					    <!-- <div class="form-group">
+					      <label for="start-input">State</label>
+					      <input class="form-control" id="State" type="text" placeholder="Enter State">
+					    </div> -->
+					    <div class="btn-group">
+					      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+					      State <span class="caret"></span>
+					      </button>
+					      <ul class="dropdown-menu">
+					        <li><a href="#">Alabama</a></li>
+					        <li><a href="#">Alaska</a></li>
+					        <li><a href="#">Arizona</a></li>
+					        <li><a href="#">Arkansas</a></li>
+					        <li><a href="#">California</a></li>
+					        <li><a href="#">Colorado</a></li>
+					        <li><a href="#">Conneticut</a></li>
+					        <li><a href="#">Delaware</a></li>
+					        <li><a href="#">Florida</a></li>
+					        <li><a href="#">Georgia</a></li>
+					        <li><a href="#">Hawaii</a></li>
+					        <li><a href="#">Idado</a></li>
+					        <li><a href="#">Illinois</a></li>
+					        <li><a href="#">Indiana</a></li>
+					        <li><a href="#">Iowa</a></li>
+					        <li><a href="#">Kansas</a></li>
+					        <li><a href="#">Kentucky</a></li>
+					        <li><a href="#">Louisiana</a></li>
+					        <li><a href="#">Maine</a></li>
+					        <li><a href="#">Maryland</a></li>
+					        <li><a href="#">Massachusetts</a></li>
+					        <li><a href="#">Michigan</a></li>
+					        <li><a href="#">Minnesota</a></li>
+					        <li><a href="#">Mississippi</a></li>
+					        <li><a href="#">Missouri</a></li>
+					        <li><a href="#">Montana</a></li>
+					        <li><a href="#">Nebraska</a></li>
+					        <li><a href="#">Nevada</a></li>
+					        <li><a href="#">New Hampshire</a></li>
+					        <li><a href="#">New Jersey</a></li>
+					        <li><a href="#">New Mexico</a></li>
+					        <li><a href="#">New York</a></li>
+					        <li><a href="#">North Carolina</a></li>
+					        <li><a href="#">North Dakota</a></li>
+					        <li><a href="#">Ohio</a></li>
+					        <li><a href="#">Oklahoma</a></li>
+					        <li><a href="#">Oregon</a></li>
+					        <li><a href="#">Pennsylvania</a></li>
+					        <li><a href="#">Rhode Island</a></li>
+					        <li><a href="#">South Carolina</a></li>
+					        <li><a href="#">South Dakota</a></li>
+					        <li><a href="#">Tennessee</a></li>
+					        <li><a href="#">Texas</a></li>
+					        <li><a href="#">Utah</a></li>
+					        <li><a href="#">Vermont</a></li>
+					        <li><a href="#">Virginia</a></li>
+					        <li><a href="#">Washington</a></li>
+					        <li><a href="#">West Virginia</a></li>
+					        <li><a href="#">Wisconsin</a></li>
+					        <li><a href="#">Wyoming</a></li>
+					        <li role="separator" class="divider"></li>
+					        <li><a href="#">Separated link</a></li>
+					      </ul>
+					    </div>
+
+					    <br>
+					    
+					    <div class="form-group">
+					      <label for="rate-input">Zip Code</label>
+					      <input class="form-control" id="rate-input" type="text" placeholder="Enter Zip Code">
+					    </div>
+					    <button class="btn btn-primary" id="add-employee-btn" type="submit">Submit</button>
+					  </form>
+
+
+						
+			  	</div>
+				</div>
+      </div>
+		</div>
+
+    <div class="row">
+        <div class="col-sm-6">
+        	<div class="panel panel-danger">
+			  		<div class="panel-heading">
+				    	<h3 class="panel-title">Senator</h3>
+				  	</div>
+				  	<div class="panel-body">
+				   	 	Senator information will appear here.
+				  	</div>
+					</div>
+        </div>
+
+        <div class="col-sm-6">
+					<div class="panel panel-danger">
+				  	<div class="panel-heading">
+					    <h3 class="panel-title">Representative</h3>
+					  </div>
+					  <div class="panel-body">
+					   	Representative information will appear here.
+					  </div>
+					</div>
+        </div>
+    </div>
+	</div>	
+
+</body>
+</html>
