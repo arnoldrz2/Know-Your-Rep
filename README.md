@@ -19,12 +19,6 @@ Sketch of Final Product
       * Maybe state reps too, if we can find an API???
 
 APIs to be Used
-  - Google Maps API
-      * Used to show the map location of the users district
-  - ProPublica Congress API
-      * Used to retrieve legislative data (votes, bills, nominations, etc.)
-        * Congress API: "ithnTgyj4uqxSBHwwIcdHsbe8n5sJQeQSKGthHuW"
-        * API Info: https://projects.propublica.org/api-docs/congress-api/
   - Google Civic Information API
       * Used to get data on representatives/senators
 

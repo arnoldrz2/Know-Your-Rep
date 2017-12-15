@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Testing Google APIs</title>
+</head>
+
+<body>
+  <input type="text" name="zip" value="">
+  <button id="get-data">get Rep data</button>
+  <div id="images">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // Event listener for our cat-button
+    $("#get-data").on("click", function() {
+
+      // Storing our giphy API URL for a random cat image   https://www.googleapis.com/civicinfo/v2/elections?key=<YOUR_API_KEY>
+      var apikey = "AIzaSyCzbYDzSuQiuisiSRNcgt1JPATAXVEgsAY";
+
+      var address = "1700%20North%201st%20Street%20San%20Jose%2095112"
+
+      var queryURL = "https://www.googleapis.com/civicinfo/v2/representatives?" + "address=" + address + "&key=" + apikey;
+
+      // Perfoming an AJAX GET request to our queryURL
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+
+      // After the data from the AJAX request comes back
+      .done(function(response) {
+
+       console.log(response);
+       //console.log(response.officals.name);
+
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
