@@ -1,0 +1,34 @@
+.jumbotron {
+  background-color: #668BB5;
+  font-family: 'Playfair Display SC', serif;
+  text-align: center;
+  color: #FEFEFE;
+  border-bottom: solid;
+  border-color: #FEFEFE;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+body {
+  background: linear-gradient(#931818, #EBADAD);
+}
+.panel-heading {
+  border-style: solid;
+  border-color: #668BB5;
+  background-color: #668BB5;
+}
+
+#instructions, #addressPanel, #representative, #senatorPanel {
+  background-color: #668BB5
+}
+
+#instructionPanel {
+  border-style: solid;
+  border-color: #668BB5;
+}
+
+.panel-title {
+  color: #FEFEFE;
+}
