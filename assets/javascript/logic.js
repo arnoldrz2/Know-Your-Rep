@@ -45,8 +45,9 @@ $("#submit").on("click", function(event) {
        console.log(response);
        $("#senator").append(response.officials[10].name);
        var url = response.officials[10].urls;
-       // JSON.stringify(url);
-       $("#senator").append(<a href="response.officials[10].urls">response.officials[10].urls/>);
+
+       $("#senator1url").attr("href", response.officials[10].urls);
+      //document.getElementById("#senator1url").href = "http://172.28.12.34:102";
        // $("#senator").append(<a href="response.officials[10].urls"/>);
 
        // alert(response.officials[10].name);
