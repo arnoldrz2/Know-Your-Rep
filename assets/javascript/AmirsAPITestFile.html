@@ -16,10 +16,10 @@
     // Event listener for our cat-button
     $("#get-data").on("click", function() {
 
-      // Storing our giphy API URL for a random cat image   https://www.googleapis.com/civicinfo/v2/elections?key=<YOUR_API_KEY>
+      //  https://www.googleapis.com/civicinfo/v2/elections?key=<YOUR_API_KEY>
       var apikey = "AIzaSyCzbYDzSuQiuisiSRNcgt1JPATAXVEgsAY";
 
-      var address = "1700%20North%201st%20Street%20San%20Jose%2095112"
+      var address = "5506%20Grover%20Ave%20Austin%2078756"
 
       var queryURL = "https://www.googleapis.com/civicinfo/v2/representatives?" + "address=" + address + "&key=" + apikey;
 
@@ -33,7 +33,7 @@
       .done(function(response) {
 
        console.log(response);
-       //console.log(response.officals.name);
+       alert(response.officials[0].name);
 
       });
     });
