@@ -44,14 +44,21 @@ $("#submit").on("click", function(event) {
       // var rep = response.data;
        console.log(response);
 
+       //Set website and info for Senators to the webpage
        $("#senator").append(response.officials[2].name);
        $("#senator").append(response.officials[3].name);
 
        $("#senator1url").attr("href", response.officials[2].urls);
        $("#senator2url").attr("href", response.officials[3].urls);
 
+       $("#senator1url").text(response.officials[2].name + " Website");
+       $("#senator2url").text(response.officials[3].name + " Website");
+
+       //Set website and info for House of Represenatives to the webpage
        $("#representative").append(response.officials[8].name);
        $("#houseurl").attr("href", response.officials[8].urls);
+
+       $("#houseurl").text(response.officials[8].name + " Website");
 
       });
     });
