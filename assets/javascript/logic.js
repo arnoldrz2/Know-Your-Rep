@@ -40,13 +40,14 @@ $("#submit").on("click", function(event) {
 
        //Set website and info for Senators to the webpage
        //$("#senator").append(response.officials[2].name);
-       $("#senator").append(response.officials[3].name);
+       //$("#senator").append(response.officials[3].name);
+
        // Arrays 2 and 3 contain senetor related information
        $("#senator1name").text("Name: " + response.officials[2].name);
        $("#senator2name").text("Name: " + response.officials[3].name);
 
-       $("#senator1party").text("Name: " + response.officials[2].party);
-       $("#senator2party").text("Name: " + response.officials[3].party);
+       $("#senator1party").text("Party: " + response.officials[2].party);
+       $("#senator2party").text("Party: " + response.officials[3].party);
 
        //$("#senator1url").attr("src", response.officials[2].photoUrl);
        //$("#senator2url").attr("src", response.officials[3].photoUrl);
