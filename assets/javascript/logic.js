@@ -43,14 +43,12 @@ $("#submit").on("click", function(event) {
       .done(function(response) {
       // var rep = response.data;
        console.log(response);
-       $("#senator").append(response.officials[10].name);
-       var url = response.officials[10].urls;
 
-       $("#senator1url").attr("href", response.officials[10].urls);
-      //document.getElementById("#senator1url").href = "http://172.28.12.34:102";
-       // $("#senator").append(<a href="response.officials[10].urls"/>);
+       $("#senator").append(response.officials[2].name);
+       $("#senator").append(response.officials[3].name);
 
-       // alert(response.officials[10].name);
+       $("#senator1url").attr("href", response.officials[2].urls);
+       $("#senator2url").attr("href", response.officials[3].urls);
 
 
       });
