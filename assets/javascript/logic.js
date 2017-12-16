@@ -50,6 +50,8 @@ $("#submit").on("click", function(event) {
        $("#senator1url").attr("href", response.officials[2].urls);
        $("#senator2url").attr("href", response.officials[3].urls);
 
+       $("#representative").append(response.officials[8].name);
+       $("#houseurl").attr("href", response.officials[8].urls);
 
       });
     });
