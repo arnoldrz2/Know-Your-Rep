@@ -39,11 +39,13 @@ $("#submit").on("click", function(event) {
        console.log(response);
 
        //Set website and info for Senators to the webpage
-       $("#senator").append(response.officials[2].name);
+       //$("#senator").append(response.officials[2].name);
        $("#senator").append(response.officials[3].name);
 
-       $("#senator1url").attr("src", response.officials[2].photoUrl);
-       $("#senator2url").attr("src", response.officials[3].photoUrl);
+       $("#senator1name").text("Name: " + response.officials[2].name);
+
+       //$("#senator1url").attr("src", response.officials[2].photoUrl);
+       //$("#senator2url").attr("src", response.officials[3].photoUrl);
 
        $("#senator1url").attr("href", response.officials[2].urls);
        $("#senator2url").attr("href", response.officials[3].urls);
