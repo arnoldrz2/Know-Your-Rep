@@ -9,6 +9,11 @@ function URLify (string) {
 $("#submit").on("click", function(event) {
   event.preventDefault();
 
+    //clear House and Senate panels
+    $('#senator').val('');
+    //$('#house').val('');
+
+
 
       // Google Civic API
       var apikey = "AIzaSyCzbYDzSuQiuisiSRNcgt1JPATAXVEgsAY";
@@ -38,7 +43,13 @@ $("#submit").on("click", function(event) {
       .done(function(response) {
       // var rep = response.data;
        console.log(response);
-       alert(response.officials[10].name);
+       $("#senator").append(response.officials[10].name);
+       var url = response.officials[10].urls;
+       // JSON.stringify(url);
+       $("#senator").append(<a href="response.officials[10].urls">response.officials[10].urls/>);
+       // $("#senator").append(<a href="response.officials[10].urls"/>);
+
+       // alert(response.officials[10].name);
 
 
       });
