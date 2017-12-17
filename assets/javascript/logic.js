@@ -52,11 +52,11 @@ $("#submit").on("click", function(event) {
        $("#senator1Phone").text("Phone Number: " + response.officials[2].phones[0]);
        $("#senator2Phone").text("Phone Number: " + response.officials[3].phones[0]);
 
-       $("#senator1Twitter").text("Twitter Handle: " + response.officials[2].channels[1]);
-       $("#senator2Twitter").text("Twitter Handle: " + response.officials[3].channels[1]);
+       $("#senator1Twitter").text("Twitter Handle: " + response.officials[2].channels[1].id);
+       $("#senator2Twitter").text("Twitter Handle: " + response.officials[3].channels[1].id);
 
-       $("#senator1FB").text("Facebook Page: " + response.officials[2].channels[0]);
-       $("#senator2FB").text("Facebook Page: " + response.officials[3].channels[0]);
+       $("#senator1FB").text("Facebook Page: " + response.officials[2].channels[0].id);
+       $("#senator2FB").text("Facebook Page: " + response.officials[3].channels[0].id);
 
 
        //$("#senator1url").attr("src", response.officials[2].photoUrl);
@@ -70,17 +70,17 @@ $("#submit").on("click", function(event) {
 
        //Set website and info for House of Represenatives to the webpage
        //$("#representative").append(response.officials[8].name);
-       $("#representative").text("Name: " + response.officials[8].name);
-       $("#representative").append("Party: " + response.officials[8].party);
+       $("#repName").text("Name: " + response.officials[8].name);
+       $("#repParty").html("Party: " + response.officials[8].party);
 
-       $("#housereppic").attr("src", response.officials[8].name);
+       $("#repPic").attr("src", response.officials[8].name);
 
-       $("#houseurl").attr("href", response.officials[8].urls);
+       $("#repurl").attr("href", response.officials[8].urls);
 
-       $("#houseurl").text(response.officials[8].name + " Website");
-       $("#housePhone").text("Phone Number: " + response.officials[8].phones[0]);
-       $("#houseTwitter").text("Twitter Handle: " + response.officials[8].channels[0]);
-       $("#houseFB").text("Facebook Page: " + response.officials[8].channels[1]);
+       $("#repurl").text(response.officials[8].name + " Website");
+       $("#repPhone").text("Phone Number: " + response.officials[8].phones[0]);
+       $("#repTwitter").text("Twitter Handle: " + response.officials[8].channels[0].id);
+       $("#repFB").text("Facebook Page: " + response.officials[8].channels[1].id);
 
 
       });
