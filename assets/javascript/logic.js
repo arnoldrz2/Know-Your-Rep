@@ -58,10 +58,6 @@ $("#submit").on("click", function(event) {
        $("#senator1FB").text("Facebook Page: " + response.officials[2].channels[0]);
        $("#senator2FB").text("Facebook Page: " + response.officials[3].channels[0]);
 
-       $("#housePhone").text("Phone Number: " + response.officials[8].phones[0]);
-       $("#houseTwitter").text("Twitter Handle: " + response.officials[8].channels[0]);
-       $("#houseFB").text("Facebook Page: " + response.officials[8].channels[1]);
-
 
        //$("#senator1url").attr("src", response.officials[2].photoUrl);
        //$("#senator2url").attr("src", response.officials[3].photoUrl);
@@ -75,12 +71,17 @@ $("#submit").on("click", function(event) {
        //Set website and info for House of Represenatives to the webpage
        //$("#representative").append(response.officials[8].name);
        $("#representative").text("Name: " + response.officials[8].name);
+       $("#representative").append("Party: " + response.officials[8].party);
 
        $("#housereppic").attr("src", response.officials[8].name);
 
        $("#houseurl").attr("href", response.officials[8].urls);
 
        $("#houseurl").text(response.officials[8].name + " Website");
+       $("#housePhone").text("Phone Number: " + response.officials[8].phones[0]);
+       $("#houseTwitter").text("Twitter Handle: " + response.officials[8].channels[0]);
+       $("#houseFB").text("Facebook Page: " + response.officials[8].channels[1]);
+
 
       });
     });
