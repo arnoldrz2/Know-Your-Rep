@@ -32,3 +32,9 @@ body {
 .panel-title {
   color: #FEFEFE;
 }
+
+#foot {
+ margin-top: 40px;
+ text-align: center;
+ font-family: sans-serif;
+}

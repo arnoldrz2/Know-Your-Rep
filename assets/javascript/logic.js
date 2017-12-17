@@ -82,6 +82,14 @@ $("#submit").on("click", function(event) {
        $("#repTwitter").text("Twitter Handle: " + response.officials[8].channels[0].id);
        $("#repFB").text("Facebook Page: " + response.officials[8].channels[1].id);
 
+       $("#govName").text("Name: " + response.officials[4]);
+       $("#govParty").text("Party: " + response.officials[4].party);
+       $("#govUrl").attr("href", response.officials[4].urls);
+       $("#govUrl").text(response.officials[4].name + " Website");
+       $("#govPhone").text("Phone Number: " + response.officials[4].phones[0]);
+       $("#govTwitter").text("Twitter Handle: " + response.officials[4].channels[0].id);
+       $("#govFB").text("Facebook Page: " + response.officials[4].channels[1].id);
+
 
       });
     });
