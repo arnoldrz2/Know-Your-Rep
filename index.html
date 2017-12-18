@@ -37,7 +37,7 @@
 	<div class="container">
 
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-12">
          <div class="panel panel-info" id="instructionPanel">
 			   		<div class="panel-heading" id="instructions">
 				    	<h3 class="panel-title">Instructions</h3>
@@ -45,18 +45,18 @@
 			  	<div class="panel-body">
 			   	 <p>
 						 To find your house representative and state senetor,
-						 enter your address into the search box on the right and
+						 enter your address into the search box on below and
 						 click the search button.
 					 </p>
 					 <p>
 						 Information on your house representative and state senator will
-						 appear in the boxes below.
+						 appear in the boxes at the bottom of the page.
 					 </p>
 			  	</div>
 				 </div>
       </div>
 
-      <div class="col-sm-6">
+      <div class="col-sm-12">
         <div class="panel panel-info">
 		  		<div class="panel-heading" id="addressPanel">
 			    	<h3 class="panel-title">Address Input</h3>
@@ -71,6 +71,7 @@
 					     <label for="role-input">City</label>
 					     <input class="form-control" id="city" type="text" placeholder="Enter City">
 					    </div>
+
 					    <!-- <div class="form-group">
 					      <label for="start-input">State</label>
 					      <input class="form-control" id="State" type="text" placeholder="Enter State">
@@ -158,19 +159,18 @@
 				   	 	<p>
 								<p id="senator1Name"></p>
 								<p id="senator1Party"></p>
-								<a id="senator1Url" href="" target="_blank"></a><br>
+								<p><a id="senator1Url" href="" target="_blank"></a></p>
 								<p id="senator1Phone"></p>
 								<p id="senator1Twitter" href="" target="_blank"></p>
 								<p id="senator1FB" href="" target="_blank"></p>
-								</p>
+							</p>
 
 								<br>
-								<br>
 
-								<p>
+							<p>
 								<p id="senator2Name"></p>
 								<p id="senator2Party"></p>
-								<a id="senator2Url" href="" target="_blank"></a><br>
+								<p><a id="senator2Url" href="" target="_blank"></a></p>
 								<p id="senator2Phone"></p>
 								<p id="senator2Twitter" href="" target="_blank"></p>
 								<p id="senator2FB" href="" target="_blank"></p>
@@ -183,13 +183,13 @@
         <div class="col-sm-6">
 					<div class="panel panel-info">
 				  	<div class="panel-heading" id="representativePanel">
-					    <h3 class="panel-title">US Representative</h3>
+					    <h3 class="panel-title">Representative</h3>
 					  </div>
 					  <div class="panel-body" id="representative">
 					 		<p>
 								<p id="repName"></p>
 								<p id="repParty"></p>
-								<a id="repUrl" href="" target="_blank"></a><br>
+								<p><a id="repUrl" target="_blank"></a></p>
 								<p id="repPhone"></p>
 								<p id="repTwitter" href="" target="_blank"></p>
 								<p id="repFB" href="" target="_blank"></p>
@@ -198,7 +198,7 @@
 					</div>
         </div>
 
-				<!-- Govenor information here. -->
+				<!-- State Representative information here. -->
 				<div class="col-sm-6">
 					<div class="panel panel-info">
 	          <div class="panel-heading" id="stateRepPanel">
@@ -208,7 +208,7 @@
 	            <p>
 	              <p id="stateRepName"></p>
 	              <p id="stateRepParty"></p>
-	              <a id="stateRepUrl" href="" target="_blank"></a><br>
+	              <p><a id="stateRepUrl" href="" target="_blank"></a></p>
 	              <p id="stateRepPhone"></p>
 	              <p id="stateRepTwitter"></p>
 	              <p id="stateRepFB"></p>
@@ -216,15 +216,30 @@
 	          </div>
 	        </div>
       </div>
-    </div>
+		</div>
 
-
-
-    </div>
-			<div class="row">
-				<div class="col-sm-12" id="foot">
-					<footer><p>Contact us for support <i class="fa fa-envelope"></i><a href="mailto:ivan123456@gmail.com"> ivan123456@gmail.com</a></p></footer>
+		<!-- Helpful Links -->
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="panel panel-info">
+					<div class="panel-heading" id="helpfulLinks">
+						<h3 class="panel-title">Helpful Links</h3>
+					</div>
+					<div class="panel-body">
+						To find out how to register for your state click here.
+		         <br>
+		         <br>
+		         <a id=“houseurl”>https://www.vote.org/voter-registration-rules/</a>
+					</div>
 				</div>
+			</div>
+		</div>
+
+		<!-- Contact Ivan for support -->
+		<div class="row">
+			<div class="col-sm-12" id="foot">
+				<footer><p>Contact us for support <i class="fa fa-envelope"></i><a href="mailto:ivan123456@gmail.com"> ivan123456@gmail.com</a></p></footer>
+			</div>
 		</div>
 	</div>
 

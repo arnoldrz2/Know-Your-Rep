@@ -20,7 +20,8 @@ body {
   background-color: #668BB5;
 }
 
-#instructions, #addressPanel, #representativePanel, #senatorPanel, #stateRepPanel {
+#instructions, #addressPanel, #representativePanel, #senatorPanel,
+#governorPanel, #helpfulLinks, #stateRepPanel {
   background-color: #668BB5
 }
 

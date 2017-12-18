@@ -82,14 +82,13 @@ $("#submit").on("click", function(event) {
        $("#repTwitter").text("Twitter Handle: " + response.officials[4].channels[0].id);
        $("#repFB").text("Facebook Page: " + response.officials[4].channels[1].id);
 
-       $("#stateRepName").text("Name: " + response.officials[8].);
+       $("#stateRepName").text("Name: " + response.officials[8].name);
        $("#stateRepParty").text("Party: " + response.officials[8].party);
        $("#stateRepUrl").attr("href", response.officials[8].urls);
        $("#stateRepUrl").text(response.officials[8].name + " Website");
        $("#stateRepPhone").text("Phone Number: " + response.officials[8].phones[0]);
        $("#stateRepTwitter").text("Twitter Handle: " + response.officials[8].channels[0].id);
        $("#stateRepFB").text("Facebook Page: " + response.officials[8].channels[1].id);
-
 
       });
     });
