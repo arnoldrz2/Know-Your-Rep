@@ -55,10 +55,16 @@ $("#submit").on("click", function(event) {
        $("#senator1Phone").text("Phone Number: " + response.officials[2].phones[0]);
        $("#senator2Phone").text("Phone Number: " + response.officials[3].phones[0]);
 
-       $("#senator1Twitter").text("Twitter");
-       $("#senator1Twitter").attr("href", "https://twitter.com/" + response.officials[2].channels[1].id);
-       $("#senator2Twitter").text("Twitter");
-       $("#senator2Twitter").attr("href", "https://twitter.com/" + response.officials[3].channels[1].id);
+       //$("#senator1Twitter").text("Twitter");
+       $("#senator1Twitter").append("<a id='sen1twitterlink' href='' target='_blank'><img id='sen1twitterlogo' style='width:42px;height:42px;border:0;'></a>");
+       $("#sen1twitterlogo").attr("src", "assets/images/twittericons.png");
+       $("#sen1twitterlink").attr("href", "https://twitter.com/" + response.officials[2].channels[1].id);       
+       
+
+       //$("#senator2Twitter").text("Twitter");
+       $("#senator2Twitter").append("<a id='sen2twitterlink' href='' target='_blank'><img id='sen2twitterlogo' style='width:42px;height:42px;border:0;'></a>");
+       $("#sen2twitterlogo").attr("src", "assets/images/twittericons.png");
+       $("#sen2twitterlink").attr("href", "https://twitter.com/" + response.officials[3].channels[1].id);
 
        // Facebook Function: Not working ideally yet
        // $("#senator1FB").text("Facebook Page: " + response.officials[2].channels[0].id);
@@ -86,8 +92,10 @@ $("#submit").on("click", function(event) {
 
        $("#repUrl").text(response.officials[4].name + " Website");
        $("#repPhone").text("Phone Number: " + response.officials[4].phones[0]);
-       $("#repTwitter").text("Twitter");
-       $("#repTwitter").attr("href", "https://twitter.com/" + response.officials[4].channels[0].id);
+       
+       $("#repTwitter").append("<a id='reptwitterlink' href='' target='_blank'><img id='reptwitterlogo' style='width:42px;height:42px;border:0;'></a>");
+       $("#reptwitterlogo").attr("src", "assets/images/twittericons.png");
+       $("#reptwitterlink").attr("href", "https://twitter.com/" + response.officials[4].channels[0].id);
        // $("#repFB").text("Facebook Page: " + response.officials[4].channels[1].id);
 
        $("#stateRepName").text("Name: " + response.officials[8].name);
@@ -95,8 +103,10 @@ $("#submit").on("click", function(event) {
        $("#stateRepUrl").attr("href", response.officials[8].urls);
        $("#stateRepUrl").text(response.officials[8].name + " Website");
        $("#stateRepPhone").text("Phone Number: " + response.officials[8].phones[0]);
-       $("#stateRepTwitter").text("Twitter");
-       $("#stateRepTwitter").attr("href", "https://twitter.com/" + response.officials[8].channels[0].id);
+
+       $("#stateRepTwitter").append("<a id='stateReptwitterlink' href='' target='_blank'><img id='stateReptwitterlogo' style='width:42px;height:42px;border:0;'></a>");
+       $("#stateReptwitterlogo").attr("src", "assets/images/twittericons.png");
+       $("#stateReptwitterlink").attr("href", "https://twitter.com/" + response.officials[8].channels[0].id);
 
        // $("#stateRepFB").text("Facebook Page: " + response.officials[8].channels[1].id);
 
