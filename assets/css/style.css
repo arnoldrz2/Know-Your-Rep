@@ -32,6 +32,11 @@ body {
 
 .panel-title {
   color: #FEFEFE;
+  font-family: 'Lato', sans-serif;
+}
+
+.panel-body {
+  font-family: 'Lato', sans-serif;
 }
 
 #foot {
@@ -39,4 +44,3 @@ body {
  text-align: center;
  font-family: sans-serif;
 }
-
