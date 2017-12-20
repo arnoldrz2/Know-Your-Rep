@@ -55,10 +55,11 @@ $("#submit").on("click", function(event) {
        $("#senator1Twitter").text("Twitter Handle: " + response.officials[2].channels[1].id);
        $("#senator2Twitter").text("Twitter Handle: " + response.officials[3].channels[1].id);
 
-       $("#senator1FB").text("Facebook Page: " + response.officials[2].channels[0].id);
-       $("#senator2FB").text("Facebook Page: " + response.officials[3].channels[0].id);
+       // Facebook Function: Not working ideally yet
+       // $("#senator1FB").text("Facebook Page: " + response.officials[2].channels[0].id);
+       // $("#senator2FB").text("Facebook Page: " + response.officials[3].channels[0].id);
 
-
+       // Picture Function: Not working yet
        //$("#senator1url").attr("src", response.officials[2].photoUrl);
        //$("#senator2url").attr("src", response.officials[3].photoUrl);
 
@@ -80,7 +81,7 @@ $("#submit").on("click", function(event) {
        $("#repUrl").text(response.officials[4].name + " Website");
        $("#repPhone").text("Phone Number: " + response.officials[4].phones[0]);
        $("#repTwitter").text("Twitter Handle: " + response.officials[4].channels[0].id);
-       $("#repFB").text("Facebook Page: " + response.officials[4].channels[1].id);
+       // $("#repFB").text("Facebook Page: " + response.officials[4].channels[1].id);
 
        $("#stateRepName").text("Name: " + response.officials[8].name);
        $("#stateRepParty").text("Party: " + response.officials[8].party);
@@ -88,7 +89,7 @@ $("#submit").on("click", function(event) {
        $("#stateRepUrl").text(response.officials[8].name + " Website");
        $("#stateRepPhone").text("Phone Number: " + response.officials[8].phones[0]);
        $("#stateRepTwitter").text("Twitter Handle: " + response.officials[8].channels[0].id);
-       $("#stateRepFB").text("Facebook Page: " + response.officials[8].channels[1].id);
+       // $("#stateRepFB").text("Facebook Page: " + response.officials[8].channels[1].id);
 
       });
     });
