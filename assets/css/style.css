@@ -52,3 +52,18 @@ body {
   text-align: center;
   font-family: 'Lato', sans-serif;
 }
+
+#timer {
+text-align: center;
+font-size: 40px;
+color: #FBF7F3 ;
+padding-bottom: 10px;
+}
+
+#timerHead {
+ text-align: center;
+ font-family: 'Lato', sans-serif;
+ font-size: 30px;
+ color: #FBF7F3 ;
+}
+
