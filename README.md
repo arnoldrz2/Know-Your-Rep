@@ -1,7 +1,4 @@
-# Project1
-
-Project Title
-  - Know Your Rep (working title)
+# Know Your Rep
 
 Team Members
   - Jesse
@@ -11,20 +8,12 @@ Team Members
   - Amir
 
 Project Description
-  - A site that allows users to connect with their local representatives in Congress
+  - A site that allows users to connect with their state and federal representatives
 
 Sketch of Final Product
   - User enters in address or zip code
-  - Site returns the users representatives in Congress and current bills supported by the user's rep
-      * Maybe state reps too, if we can find an API???
+  - The site will return state and federal House representatives, as well as, state senators for the entered zip code
 
 APIs to be Used
   - Google Civic Information API
       * Used to get data on representatives/senators
-
-Rough Breakdown of Tasks
-  - Research APIs
-      * Determine what data is pulled from which API
-  - Develop layout of site
-      * HTML/CSS components
-  - Create JavaScript to pull data onto webpage
